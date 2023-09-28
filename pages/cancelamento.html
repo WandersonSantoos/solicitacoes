@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <meta name="description" content="Av Padre Meira, Nº 35 - Ed. Paraná - Centro, João Pessoa-PB">
+
+    <!-- SMO -->
+    <meta property="og:title" content="#sejaSmart e Venda mais">
+    <meta property="og:site_name" content="Smart Promotora - Solicitações">
+    <meta property="og:description" content="Av Padre Meira, Nº 35 - Ed. Paraná - Centro, João Pessoa-PB">
+    <meta property="og:image" content="http://smartpromotora.com/img/logopreto.png">
+    <meta property="og:image:type" content="logopreto.png">
+
+    <link rel="stylesheet" href="../styles/cancelamento.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script defer src="../scripts/app.js"></script>
+    <title>Solicitações</title>
+</head>
+<body>
+    <form
+      class="formulario"
+      action="https://formsubmit.co/ajax/esteira@smartpromotora.com"
+      method="POST"
+      data-form
+    >
+    <div class="formulario">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="Novo cancelamento!">
+            <div class="titulo">
+                <div class="container-title">
+                    <a href="http://smartpromotora.com/" target="_blank"><img class="logo" src="../img/logobranco.png" alt="Logo marca"></a>
+                    <span class="p-title">Solicitar Cancelamento</span>
+                </div>
+
+            </div>
+
+            <!--Linha 1-->
+            <div class="campotexto">
+                <div class="cont-telefone">
+                    <label class="label-telefone" for="CPF:">CPF:</label>
+                    <input type="number" name="CPF" id="CPF" required min="0">
+                </div>
+            
+            </div>
+            <!--Linha 1-->
+
+            <!--Linha 2-->
+
+            <div class="campotexto">
+                <div class="cont-tipo">
+                    <label class="local" for="Número da ADE:">Número da ADE:</label>
+                    <input type="number" name="Número da ADE" id="Número da ADE" required min="0">
+                </div>
+            </div>
+            <!-- Linha 2 -->
+
+            <!-- Linha 3 -->
+            <div class="linha4">
+                <div class="secao1">
+                    <div class="cont-quantP">
+                        <label class="" for="Banco">Banco:</label>
+                        <input type="text" name="Banco" id="Banco" required>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="linha5">
+                <div class="secao1">
+                    <div class="cont-quant">
+                        <label class="" for="Motivo de Desistencia">Motivo de Desistencia:</label>
+                        <select name="Motivo de Desistencia:" id="type" required>
+                            <option>Desistencia do cliente</option>
+                            <option>Digitada errada</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!--Linha 3 -->
+
+            <!-- Linha 4 -->
+            <label for="Nome do parceiro:">Nome do parceiro:</label>
+            <textarea name="Nome do parceiro:" id="Nome do parceiro:" required></textarea>
+            <!-- Linha 4 -->
+
+            <button class="btn" type="submit" data-button>Solicitar</button>
+        </div>    
+    </form>
+</body>
+</html>
