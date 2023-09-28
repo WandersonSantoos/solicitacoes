@@ -218,8 +218,7 @@
   }
 
   .logo {
-    width: 25%;
-    height: 25%;
+    width: 120px;
   }
 
   .title {
@@ -232,7 +231,7 @@
   }
 
   .p-title {
-    font-size: 0.90rem;
+    font-size: 1rem;
   }
 
   .secao1 {

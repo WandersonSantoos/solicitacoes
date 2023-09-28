@@ -70,4 +70,37 @@
     padding: 10px;
   }
 
+  .formulario {
+    width: 60vw;
+    padding: 30px;
+   }
+
+  .campotexto {
+    display: block;
+  }
+
+  .campo {
+    display: block;
+  }
+
+  .form {
+    width: 70vw;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  .title {
+    padding: 30px 0px 0px 10px ;
+    font-size: 30px;
+  }
+
+  .cont-local {
+    margin-left: 0;
+  }
+
+  .p-title {
+    font-size: 0.90rem;
+  }
  }
