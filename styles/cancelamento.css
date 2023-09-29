@@ -25,6 +25,23 @@
   color: #d9dbe2;
  }
 
+ .back-index {
+  color: #b0b2be;
+  font-size: 30px;
+  padding-left: 15px;
+ }
+
+ .back-index:hover {
+  padding-left: 10px;
+  color: #d9dbe2;
+  transition: all ease-in .3s;
+}
+
+.back-index:not(:hover) {
+  padding-left: 15px; /* Inicia a animação quando o mouse sai do elemento */
+  transition: all ease-in .3s;
+}
+
  .title {
    text-align: center;
    color: white;

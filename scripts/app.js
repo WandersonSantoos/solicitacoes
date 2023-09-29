@@ -61,6 +61,26 @@ class FormSubmit {
     form: "[data-form]",
     button: "[data-button]",
     success: "<div class='sucesso'> <h1 class='success'>Solicitação enviada!</h1> <a class='back' href='../index.html'>Voltar</a> </div>",
-    error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
+    error: "<h1 class='error'>Não foi possível enviar sua mensagem. <a class='back' href='../index.html'>Voltar</a></h1>",
   });
   formSubmit.init();
+
+  // Validar CPF
+  document.getElementById("cpf").addEventListener("input", function () {
+    const cpfInput = this.value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+    const formattedCPF = formatCPF(cpfInput); // Formata o CPF com pontos e traço
+
+    this.value = formattedCPF;
+});
+
+function formatCPF(cpf) {
+    if (cpf.length <= 3) {
+        return cpf;
+    } else if (cpf.length <= 6) {
+        return cpf.replace(/(\d{3})(\d{0,3})/, "$1.$2");
+    } else if (cpf.length <= 9) {
+        return cpf.replace(/(\d{3})(\d{3})(\d{0,3})/, "$1.$2.$3");
+    } else {
+        return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{0,2})/, "$1.$2.$3-$4");
+    }
+}

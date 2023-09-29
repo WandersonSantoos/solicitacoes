@@ -30,13 +30,25 @@
  .p-title {
   font-size: 1.2rem;
   color: white;
-  padding: 10px;
+  padding: 20px 10px;
  }
 
  .nav-link {
-  padding: 18px;
+  padding: 15px;
+  width: 180px;
+  text-align: center;
+  font-size: 1.20rem;
+  margin-bottom: 10px;
+  border-radius: 5px;
   text-decoration: none;
-  color: #b0b2be;
+  color: #c1c3cf;
+  background-color: #323644;
+ }
+
+ .nav-link:hover, .nav-link:focus {
+    outline: none;
+    background-color:#26344a;
+    transition: all ease-in .2s;
  }
 
  .nav-link:hover {

@@ -15,6 +15,7 @@
     <meta property="og:image" content="http://smartpromotora.com/img/logopreto.png">
     <meta property="og:image:type" content="logopreto.png">
 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
     <link rel="stylesheet" href="../styles/liberacao.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <script defer src="../scripts/app.js"></script>
@@ -23,14 +24,24 @@
 <body>
     <form
       class="formulario"
-      action="https://formsubmit.co/ajax/esteira@smartpromotora.com"
+      action="https://formsubmit.co/ajax/esteira@smartpromotora.com" 
       method="POST"
       data-form
     >
+    <!-- E-mail - correto -->
+    <!-- esteira@smartpromotora.com -->
+
+    <!-- Email - Teste -->
+    <!-- wandersonsantosws315@gmail.com -->
+
     <div class="formulario">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="Nova Liberação!">
             <div class="titulo">
+                <a class="back-index" href="../index.html">
+                    <i class="uil uil-arrow-left"></i>
+                </a>
+                
                 <div class="container-title">
                     <a href="http://smartpromotora.com/" target="_blank"><img class="logo" src="../img/logobranco.png" alt="Logo marca"></a>
                     <span class="p-title">Solicitar Liberação</span>
@@ -42,10 +53,8 @@
             <div class="campotexto">
                 <div class="cont-telefone">
                     <label class="label-telefone" for="CPF:">CPF:</label>
-                    <input type="number" name="CPF" id="CPF" min="0" required>
+                    <input type="text" name="CPF" placeholder="000.000.000-00" id="cpf" min="0" maxlength="14" required>
                 </div>
-            
-
             </div>
             <!--Linha 1-->
 
@@ -71,7 +80,7 @@
 
             <!-- Linha 4 -->
             <label for="Nome do parceiro:">Nome do parceiro:</label>
-            <textarea name="Nome do parceiro:" id="Nome do parceiro:" required></textarea>
+            <input type="text" name="Nome do parceiro:" id="Nome do parceiro:" required></input>
             <!-- Linha 4 -->
 
             <button class="btn" type="submit" data-button>Solicitar</button>
