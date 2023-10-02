@@ -51,38 +51,30 @@
 
             <!--Linha 1-->
             <div class="campotexto">
-                <div class="cont-telefone">
+                <div class="cont-local">
                     <label class="label-telefone" for="CPF:">CPF:</label>
-                    <input type="text" name="CPF" placeholder="000.000.000-00" id="cpf" min="0" maxlength="14" required>
+                    <input type="text" name="CPF:" placeholder="000.000.000-00" id="CPF:" min="0" maxlength="14" required>
+                </div>
+
+                <div class="cont-local">
+                    <label class="local" for="Número da ADE:">Número da ADE:</label>
+                    <input type="number" name="Número da ADE:" min="0" id="Número da ADE:" required>
                 </div>
             </div>
             <!--Linha 1-->
 
-            <!--Linha 2-->
+            <!-- Linha 3 -->
             <div class="campotexto">
                 <div class="cont-local">
-                    <label class="local" for="Número da ADE:">Número da ADE:</label>
-                    <input type="number" name="Número da ADE" min="0" id="Número da ADE" required>
+                    <label class="" for="Banco:">Banco:</label>
+                    <input type="text" name="Banco:" id="Banco:" required>
+                </div>
+
+                <div class="cont-local">
+                    <label for="Nome do parceiro:">Nome do parceiro:</label>
+                    <input type="text" name="Nome do parceiro:" id="Nome do parceiro:" required></input>
                 </div>
             </div>
-            <!-- Linha 2 -->
-
-            <!-- Linha 3 -->
-            <div class="linha4">
-                <div class="secao1">
-                    <div class="cont-quantP">
-                        <label class="" for="Banco">Banco:</label>
-                        <input type="text" name="Banco" id="Banco" required>
-                    </div>
-                </div>
-            </div>
-            <!--Linha 3 -->
-
-            <!-- Linha 4 -->
-            <label for="Nome do parceiro:">Nome do parceiro:</label>
-            <input type="text" name="Nome do parceiro:" id="Nome do parceiro:" required></input>
-            <!-- Linha 4 -->
-
             <button class="btn" type="submit" data-button>Solicitar</button>
         </div>    
     </form>

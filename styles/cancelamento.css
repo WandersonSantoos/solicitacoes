@@ -74,11 +74,10 @@
     width: 100%;
     background-color: #272933;
     padding: 20px;
-    max-width: 30rem;
+    max-width: 35rem;
     border-radius: 10px;
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.329);
  }
-
 
  label, input, textarea, .btn {
     display: block;
@@ -101,9 +100,6 @@
     transition: border-color 0.3s, box-shadow 0.3s;
  }
 
- select {
-  padding: 0.60rem 2.20rem;
- }
 
  input:hover, input:focus,
  textarea:hover, textarea:focus, 
@@ -118,57 +114,22 @@
     color: #b0b2be;
  }
 
- .campo {
-   display: flex;
-
- }
-
  .campotexto {
-   display: flex;
-   flex-direction: column;
+  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
  }
 
- .secao1 {
-  display: flex;
-  flex-direction: column;
- }
-
- .cont-local {
-   margin-left: 10px;
- }
-
- .cont-tamanho {
-   margin-left: 74px;
- }
-
- .cont-pagto {
-   margin-left: 90px;
- }
-
- .cont-bordado {
-   margin-left: 10px;
- }
-
- .wrapper {
-   justify-content: center;
-   margin: 5px;
- }
-
- textarea {
-    min-height: 2.5rem;
-    resize: vertical;
+ .campotexto2 {
+  gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
  }
 
  .children-cabecalho{
   display: flex;
   justify-content: space-between;
  }
-
- .remover {
-  display: flex;
-  margin: 16px 5px 5px 5px;
-
-}
 
  .btn {
     border: none;
@@ -223,13 +184,9 @@
     padding: 10px;
   }
 
-  .campotexto {
-    display: block;
-  }
-
-  .campo {
-    display: block;
-  }
+  .campotexto, .campotexto2 {
+    grid-template-columns: repeat(1, 1fr);
+   }
 
   .form {
     width: 70vw;
@@ -242,29 +199,5 @@
   .title {
     padding: 30px 0px 0px 10px ;
     font-size: 30px;
-  }
-
-  .cont-local {
-    margin-left: 0;
-  }
-
-  .p-title {
-    font-size: 1rem;
-  }
-
-  .secao1 {
-    display: block;
-  }
-
-  select {
-    padding: 0.60rem 1.5rem;
-  }
-
-  .cont-bordado {
-    margin-left: 0;
-  }
-
-  .cont-quant {
-    margin-left: 5px;
   }
  }
