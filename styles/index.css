@@ -7,13 +7,14 @@
  }
 
  body {
-    min-height: 98vh;
+    min-height: 100vh;
     display: grid;
     place-items: center;
     padding: 1rem;
     background: #1a1b24;
     font-family: sans-serif;
  }
+
 
  .formulario {
   display: flex;
@@ -76,6 +77,13 @@
     box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.329);
  }
 
+ .img-marca {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 30px;
+ }
+
  /* Para telas pequenas */
  @media screen and (max-width: 500px) {
   body {
@@ -102,5 +110,9 @@
 
   .p-title {
     font-size: 0.90rem;
+  }
+
+  .img-marca {
+    display: none;
   }
  }

@@ -178,6 +178,13 @@
   color: tomato;
  }
 
+ .img-marca {
+   position: absolute;
+   right: 10px;
+   bottom: 10px;
+   width: 30px;
+  }
+
  /* Para telas pequenas */
  @media screen and (max-width: 500px) {
   body {
@@ -199,5 +206,9 @@
   .title {
     padding: 30px 0px 0px 10px ;
     font-size: 30px;
+  }
+
+  .img-marca {
+   display: none;
   }
  }

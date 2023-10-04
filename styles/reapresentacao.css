@@ -189,6 +189,13 @@
   color: tomato;
  }
 
+ .img-marca {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 30px;
+ }
+
  /* Para telas pequenas */
  @media screen and (max-width: 500px) {
   body {
@@ -223,4 +230,8 @@
   .p-title {
     font-size: 0.90rem;
   } 
+
+  .img-marca {
+    display: none;
+  }
  }
