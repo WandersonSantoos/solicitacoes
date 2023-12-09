@@ -94,3 +94,39 @@ function formatCPF(cpf) {
     return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{0,2})/, "$1.$2.$3-$4");
   }
 }
+
+// Ouve os eventos de alteração nos campos e valida o formulário em tempo real
+document.querySelector("[data-form]").addEventListener("input", function (event) {
+  const targetField = event.target;
+
+  // Se o campo é um dos campos que requerem remoção de caracteres especiais
+  if (targetField && ["Número da ADE:", "Banco Dígitado:", "Banco:", "Conta:", "Agência:"].includes(targetField.name)) {
+    // Remove apenas caracteres especiais do valor atual do campo
+    targetField.value = targetField.value.replace(/[-!$%^&*()_+|~=`{}\[\]:";'<>?,.\/\\]/g, '');
+  }
+
+  validateForm(); // Chama a função para validar os campos sempre que houver uma alteração
+});
+
+window.addEventListener("load", function () {
+  exibirAlerta("Por favor, preencha os campos corretamente!")
+});
+
+// Alert customizado:
+function exibirAlerta(mensagem) {
+  const modal = document.getElementById("customAlert");
+  const alertMessage = document.getElementById("alertMessage");
+
+  alertMessage.innerHTML = mensagem;
+  modal.style.display = "block";
+}
+
+// Fechar alert customizado
+function fecharAlerta() {
+  const modal = document.getElementById("customAlert");
+  modal.style.animation = "fadeOut 0.5s ease-in-out";
+  setTimeout(() => {
+    modal.style.display = "none";
+    modal.style.animation = "";
+  }, 500);
+}

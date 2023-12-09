@@ -22,6 +22,7 @@
     <title>Solicitações</title>
 </head>
 <body>
+
     <form
       class="formulario"
       action="https://formsubmit.co/ajax/reapresentacao@smartpromotora.com"
@@ -34,6 +35,13 @@
 
     <!-- Email - Teste -->
     <!-- wandersonsantosws315@gmail.com -->
+    
+    <div id="customAlert" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="fecharAlerta()">&times;</span>
+          <p id="alertMessage"></p>
+        </div>
+    </div>
 
     <div class="formulario">
         <input type="hidden" name="_template" value="table">
@@ -58,7 +66,7 @@
             
                 <div class="cont-local">
                     <label class="local" for="Número da ADE:">Número da ADE:</label>
-                    <input type="number" name="Número da ADE:" autocomplete="off" min="0" id="Número da ADE:" required>
+                    <input type="text" name="Número da ADE:" autocomplete="off" min="0" id="Número da ADE:" required>
                 </div>
 
                 <div class="cont-local">
@@ -90,7 +98,7 @@
                 <div class="campotexto2">
                     <div class="cont-tipo">
                         <label class="label-tipo" for="Agência:">Agência:</label>
-                        <input type="number" name="Agência:" id="Agência:" autocomplete="off" min="0" required>
+                        <input type="text" name="Agência:" id="Agência:" autocomplete="off" min="0" required>
                     </div>
                 
                     <div class="cont-quant">
