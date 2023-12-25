@@ -68,8 +68,8 @@ class FormSubmit {
 const formSubmit = new FormSubmit({
   form: "[data-form]", // Seletor do formulário
   button: "[data-button]", // Seletor do botão de envio do formulário
-  success: "<div class='sucesso'> <h1 class='success'>Solicitação enviada!</h1> <a class='back' href='../index.html'>Voltar</a> </div>", // Mensagem de sucesso
-  error: "<h1 class='error'>Não foi possível enviar sua mensagem. <a class='back' href='../index.html'>Voltar</a></h1>", // Mensagem de erro
+  success: "<div class='sucesso'> <h1 class='success'>Solicitação enviada!</h1> <p class='response'>Em caso de solicitação faltando dados, a solicitação não será acatada!</p> <a class='back-index back' href='../index.html'><i class='uil uil-arrow-left'></i>Voltar</a></h1><a class='back' </div>", // Mensagem de sucesso
+  error: "<h1 class='error'>Não foi possível enviar sua mensagem.  <a class='back' href='../index.html'>Voltar</a></h1>", // Mensagem de erro
 });
 
 formSubmit.init(); // Inicializa a instância da classe FormSubmit
@@ -108,25 +108,25 @@ document.querySelector("[data-form]").addEventListener("input", function (event)
   validateForm(); // Chama a função para validar os campos sempre que houver uma alteração
 });
 
-window.addEventListener("load", function () {
-  exibirAlerta("Por favor, preencha os campos corretamente!")
-});
+// window.addEventListener("load", function () {
+//   exibirAlerta("Por favor, preencha os campos corretamente!")
+// });
 
-// Alert customizado:
-function exibirAlerta(mensagem) {
-  const modal = document.getElementById("customAlert");
-  const alertMessage = document.getElementById("alertMessage");
+// // Alert customizado:
+// function exibirAlerta(mensagem) {
+//   const modal = document.getElementById("customAlert");
+//   const alertMessage = document.getElementById("alertMessage");
 
-  alertMessage.innerHTML = mensagem;
-  modal.style.display = "block";
-}
+//   alertMessage.innerHTML = mensagem;
+//   modal.style.display = "block";
+// }
 
-// Fechar alert customizado
-function fecharAlerta() {
-  const modal = document.getElementById("customAlert");
-  modal.style.animation = "fadeOut 0.5s ease-in-out";
-  setTimeout(() => {
-    modal.style.display = "none";
-    modal.style.animation = "";
-  }, 500);
-}
+// // Fechar alert customizado
+// function fecharAlerta() {
+//   const modal = document.getElementById("customAlert");
+//   modal.style.animation = "fadeOut 0.5s ease-in-out";
+//   setTimeout(() => {
+//     modal.style.display = "none";
+//     modal.style.animation = "";
+//   }, 500);
+// }

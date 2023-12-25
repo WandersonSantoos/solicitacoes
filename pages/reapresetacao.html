@@ -36,16 +36,17 @@
     <!-- Email - Teste -->
     <!-- wandersonsantosws315@gmail.com -->
     
-    <div id="customAlert" class="modal">
+    <!-- <div id="customAlert" class="modal">
         <div class="modal-content">
           <span class="close" onclick="fecharAlerta()">&times;</span>
           <p id="alertMessage"></p>
         </div>
-    </div>
+    </div> -->
 
     <div class="formulario">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_subject" value="Nova Reapresentação!">
+        <input type="hidden" name="_autoresponse" value="Acabamos de receber sua solicitação, logo logo lhe daremos retorno!">
             <div class="titulo">
                 <a class="back-index" href="../index.html">
                     <i class="uil uil-arrow-left"></i>
@@ -61,17 +62,17 @@
             <div class="campotexto">
                 <div class="cont-local">
                     <label class="label-telefone" for="CPF:">CPF:</label>
-                    <input type="text" name="CPF:" placeholder="000.000.000-00" id="CPF:" min="0" maxlength="14" autocomplete="off" required>
+                    <input type="text" name="CPF:" placeholder="000.000.000-00" id="CPF:" min="0" maxlength="14" autocomplete="off" >
                 </div>
             
                 <div class="cont-local">
                     <label class="local" for="Número da ADE:">Número da ADE:</label>
-                    <input type="text" name="Número da ADE:" autocomplete="off" min="0" id="Número da ADE:" required>
+                    <input type="text" name="Número da ADE:" autocomplete="off" min="0" id="Número da ADE:" >
                 </div>
 
                 <div class="cont-local">
                     <label class="local" for="Banco Dígitado:">Banco Dígitado:</label>
-                    <input type="text" name="Banco Dígitado:" autocomplete="off" min="0" id="Banco Dígitado:" required>
+                    <input type="text" name="Banco Dígitado:" autocomplete="off" min="0" id="Banco Dígitado:" >
                 </div>
             </div>
             <!--Linha 1-->
@@ -82,23 +83,22 @@
             <div class="campotexto2">
                 <div class="cont-quantP">
                     <label class="" for="Banco:">Banco:</label>
-                    <input type="text" name="Banco:"  id="Banco:" autocomplete="off" required>
+                    <input type="text" name="Banco:"  id="Banco:" autocomplete="off" >
                 </div>
-
             
                 <div class="cont-bordado">
                     <label class="Conta" for="Conta:">Conta:</label>
-                    <input type="text" name="Conta:" id="Conta:" autocomplete="off" required>
+                    <input type="text" name="Conta:" id="Conta:" autocomplete="off" >
                 </div>
             </div>
             <!-- Linha 2 -->
 
             <!-- Linha 3 -->
-            <div class="linha4">
+            <div class="linha3">
                 <div class="campotexto2">
                     <div class="cont-tipo">
                         <label class="label-tipo" for="Agência:">Agência:</label>
-                        <input type="text" name="Agência:" id="Agência:" autocomplete="off" min="0" required>
+                        <input type="text" name="Agência:" id="Agência:" autocomplete="off" min="0" >
                     </div>
                 
                     <div class="cont-quant">
@@ -113,11 +113,20 @@
             <!--Linha 3 -->
 
             <!-- Linha 4 -->
-            <div class="campotexto3">
-                <label for="Nome do parceiro:">Nome do parceiro:</label>
-                <input type="text" name="Nome do parceiro:" id="Nome do parceiro:" required autocomplete="off" ></input>
+            <div class="linha4">
+                <div class="campotexto2">
+                    <div class="cont-tipo">
+                        <label for="Nome do parceiro:">Nome do parceiro:</label>
+                        <input type="text" name="Nome do parceiro:" id="Nome do parceiro:" autocomplete="off" ></input>
+                    </div>
+                
+                    <div class="cont-quant">
+                        <label for="email">E-mail para retorno:</label>
+                        <input type="email" name="email" id="email" autocomplete="on" ></input>
+                    </div>
+                </div>
             </div>
-            <!-- Linha 4 -->
+            <!--Linha 4 -->
 
             <button class="btn" type="submit" data-button>Solicitar</button>
         </div>    

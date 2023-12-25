@@ -177,9 +177,16 @@
     margin-bottom: 20px;
  }
 
+ .response {
+  font-size: 1.4rem;
+  color: white;
+  padding: 20px 10px;
+ }
+
  .back {
   color: white;
   font-size: 20px;
+  padding: 20px 0;
   font-weight: bolder;
   text-decoration: none;
  }
@@ -229,7 +236,7 @@
 }
 
  .img-marca {
-  position: absolute;
+  position: fixed;
   right: 10px;
   bottom: 10px;
   width: 30px;
