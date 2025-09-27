@@ -25,5 +25,4 @@ Landing page estática para centralizar **solicitações operacionais** (Reapres
 
 ---
 
-## 📂 Estrutura do projeto
 
